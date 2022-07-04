@@ -1,22 +1,22 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>renovatebot/.github"
-  ],
-  "depTypes": [
-    "dependencies",
-    {
-      "depType": "optionalDependencies",
-      "respectLatest": false,
-      "automerge": "minor",
-      "schedule": "before 5am on Mondays"
-    },
-  ],
-  "devDependencies": {
-    "automerge": "minor",
-    "schedule": null
-  },
-  "peerDependencies": {
-    "versionStrategy": "widen"
-  }
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"github>renovatebot/.github"
+	],
+	"devDependencies": {
+		"automerge": "minor",
+		"schedule": null
+	},
+	"peerDependencies": {
+		"versionStrategy": "widen"
+	},
+	"depTypes": [
+		"dependencies",
+		{
+			"depType": "optionalDependencies",
+			"respectLatest": false,
+			"automerge": "minor",
+			"schedule": "before 5am on Mondays"
+		}
+	]
 }
